@@ -20,9 +20,16 @@ def calcFFT(signal, fs):
     yf = fft(signal)
     return(xf, fftshift(yf))
 
+def identifyNote(note):
+    #need to do
+    return True
 
-Notes = {"A": 440, "B": 494, "C": 523, "D": 587, "E": 659, "F": 698, "G": 783}
 
+
+
+Notes = {"A": 440, "A#": 466.16, "B": 493.88, "C": 523.25, "C#": 554.37, "D": 587, "D#" : 622.25, "E": 659,  "F": 698, "F#": 740, "G": 783, "G#": 830.61}
+
+Chords = {"A":["A", "C#", "E"], "B":["B", "D#", "F#"], "C":["C", "E", "G"], "D":["D", "F#", "A"], "E":["E", "G#", "B"], "F":["F", "A", "C"], "G":["G", "B", "D"]}
 
 
 #Generate and play notes
